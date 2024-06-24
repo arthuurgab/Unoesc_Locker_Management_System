@@ -40,7 +40,6 @@ def remover_armario():
 def resumo():
     livres = 0
     ocupados = 0
-
     for i in armarios:
         if i == 0:
             livres += 1
@@ -59,7 +58,6 @@ def menu():
         print(f"0 - Sair")
 
         select = int(input("Informe o número do que você deseja: "))
-
         if select == 1:
             mostra_armarios()
         elif select == 2:
@@ -75,5 +73,4 @@ def menu():
             break
         else:
             print("Caracter invalido, ou inexistente")
-
 menu()
